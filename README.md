@@ -52,34 +52,34 @@ POST api/login
 - List Projects 
 ```
 GET api/project
-Authorization: Bearer Token: {{ TOKEN }}
+Authorization: Bearer Token
 ```
 ![List Projects](/public/images_doc/list_projects.png)
 
 - Create Project
 ```
 POST api/project
-Authorization: Bearer Token: {{ TOKEN }}
+Authorization: Bearer Token
 ```
 ![Create Project](/public/images_doc/new_project.png)
 
 - Project Details
 ```
 GET api/project/:project_id
-Authorization: Bearer Token: {{ TOKEN }}
+Authorization: Bearer Token
 ```
 ![Project Details](/public/images_doc/show_project.png)
 
 - Edit Project
 ```
 PUT api/project/:project_id
-Authorization: Bearer Token: {{ TOKEN }}
+Authorization: Bearer Token
 ```
 ![Edit Project](/public/images_doc/edit_project.png)
 
 - Delete Project
 ```
 DELETE api/project/:project_id
-Authorization: Bearer Token: {{ TOKEN }}
+Authorization: Bearer Token
 ```
 ![Delete Project](/public/images_doc/delete_project.png)
