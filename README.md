@@ -1,4 +1,4 @@
-## A simple API CRUD make with Laravel 8
+## A simple API CRUD with Laravel 8
 
 ### Clone the repository
 ```
