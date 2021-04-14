@@ -17,10 +17,69 @@ $ copy .env.example .env
 $ composer install
 ```
 
+### Run Migrations
+```
+$ php artisan migrate
+```
+
 ### Run Development Server
-
 Move to the project directory and run this command to start the development server.
-
 ```
 $ php artisan serve
 ```
+
+### Testing API
+For testing the API endpoints you use the Postman Collection that appears in the repository.
+The collection contains an environment named ```API CRUD Laravel8``` feel free for edit the
+environment.
+
+![API CRUD Laravel8 Environment](/public/images_doc/environment.png)
+
+### Security End Points
+- Register an user
+```
+POST api/register
+```
+![Register User](/public/images_doc/register.png)
+
+- Login
+```
+POST api/login
+```
+![Login](/public/images_doc/login.png)
+
+### Projects End Points
+- List Projects 
+```
+GET api/project
+Authorization: Bearer Token: {{ TOKEN }}
+```
+![List Projects](/public/images_doc/list_projects.png)
+
+- Create Project
+```
+POST api/project
+Authorization: Bearer Token: {{ TOKEN }}
+```
+![Create Project](/public/images_doc/new_project.png)
+
+- Project Details
+```
+GET api/project/:project_id
+Authorization: Bearer Token: {{ TOKEN }}
+```
+![Project Details](/public/images_doc/show_project.png)
+
+- Edit Project
+```
+PUT api/project/:project_id
+Authorization: Bearer Token: {{ TOKEN }}
+```
+![Edit Project](/public/images_doc/edit_project.png)
+
+- Delete Project
+```
+DELETE api/project/:project_id
+Authorization: Bearer Token: {{ TOKEN }}
+```
+![Delete Project](/public/images_doc/delete_project.png)
