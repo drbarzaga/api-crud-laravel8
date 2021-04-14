@@ -19,7 +19,7 @@ $ composer install
 
 ### Run Development Server
 
-Move to the project directory and run this command to run the development server.
+Move to the project directory and run this command to start the development server.
 
 ```
 $ php artisan serve
